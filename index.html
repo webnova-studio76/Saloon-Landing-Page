@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE | Modern Salon Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        :root {
+            --accent: #C5A059;
+        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .bg-accent { background-color: var(--accent); }
+        .text-accent { color: var(--accent); }
+        .border-accent { border-color: var(--accent); }
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold serif tracking-tighter">LUXE<span class="text-accent">.</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#features" class="hover:text-accent transition">Services</a>
+                <a href="#pricing" class="hover:text-accent transition">Pricing</a>
+                <a href="#contact" class="bg-black text-white px-6 py-2 rounded-full hover:bg-accent transition">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-20" alt="Salon Interior">
+        </div>
+        <div class="relative z-10 text-center px-6" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="serif text-5xl md:text-7xl mb-6">Elevate Your <br><span class="italic">Natural Beauty</span></h1>
+            <p class="max-w-xl mx-auto text-gray-600 text-lg mb-10">Premium styling, bespoke treatments, and a luxury atmosphere designed to make you feel like your best self.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-black text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-accent transition-all transform hover:scale-105">Book Your Session</a>
+                <a href="#features" class="border border-gray-300 px-10 py-4 rounded-full text-lg font-semibold hover:bg-gray-50 transition">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="serif text-4xl mb-4">The LUXE Experience</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="scissors" class="text-accent mb-6 w-10 h-10"></i>
+                    <h3 class="text-xl font-bold mb-3">Master Styling</h3>
+                    <p class="text-gray-500">Precision cuts tailored to your face shape and lifestyle by senior stylists.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="sparkles" class="text-accent mb-6 w-10 h-10"></i>
+                    <h3 class="text-xl font-bold mb-3">Organic Products</h3>
+                    <p class="text-gray-500">We use exclusively sulfate-free, botanical products that nourish your hair and skin.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                    <i data-lucide="coffee" class="text-accent mb-6 w-10 h-10"></i>
+                    <h3 class="text-xl font-bold mb-3">Private Lounge</h3>
+                    <p class="text-gray-500">Complimentary refreshments and a serene environment to help you decompress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="serif text-4xl mb-4">Service Menu</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="border-b border-gray-100 py-4 flex justify-between items-end" data-aos="fade-right">
+                    <div>
+                        <h4 class="text-lg font-semibold">Signature Haircut</h4>
+                        <p class="text-sm text-gray-400 italic">Wash, cut, and signature blowout</p>
+                    </div>
+                    <span class="text-accent font-bold">$85+</span>
+                </div>
+                <div class="border-b border-gray-100 py-4 flex justify-between items-end" data-aos="fade-left">
+                    <div>
+                        <h4 class="text-lg font-semibold">Full Balayage</h4>
+                        <p class="text-sm text-gray-400 italic">Hand-painted custom highlights</p>
+                    </div>
+                    <span class="text-accent font-bold">$210+</span>
+                </div>
+                <div class="border-b border-gray-100 py-4 flex justify-between items-end" data-aos="fade-right">
+                    <div>
+                        <h4 class="text-lg font-semibold">Hydra-Facial</h4>
+                        <p class="text-sm text-gray-400 italic">Deep cleansing & hydration treatment</p>
+                    </div>
+                    <span class="text-accent font-bold">$120+</span>
+                </div>
+                <div class="border-b border-gray-100 py-4 flex justify-between items-end" data-aos="fade-left">
+                    <div>
+                        <h4 class="text-lg font-semibold">Bridal Styling</h4>
+                        <p class="text-sm text-gray-400 italic">Including consultation and trial</p>
+                    </div>
+                    <span class="text-accent font-bold">$150+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-black text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="mb-12" data-aos="zoom-in">
+                <i data-lucide="quote" class="text-accent w-12 h-12 mx-auto mb-6 opacity-50"></i>
+                <p class="serif text-2xl md:text-3xl italic leading-relaxed mb-8">
+                    "The atmosphere at Luxe is unmatched. I’ve never walked out of a salon feeling so confident and relaxed. It’s more than a haircut; it’s an experience."
+                </p>
+                <h5 class="uppercase tracking-widest text-accent font-bold">— Sarah Jenkins</h5>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+            <div data-aos="fade-right">
+                <h2 class="serif text-4xl mb-6">Visit Us</h2>
+                <p class="text-gray-500 mb-8">Located in the heart of the design district. We recommend booking 2 weeks in advance.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="map-pin" class="text-accent"></i>
+                        <span>123 Beauty Lane, Manhattan, NY</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="phone" class="text-accent"></i>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="clock" class="text-accent"></i>
+                        <span>Mon - Sat: 9am - 8pm</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-2xl" data-aos="fade-left">
+                <form class="space-y-4" id="bookingForm">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Name</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-accent transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Service Interested In</label>
+                        <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-accent transition bg-white">
+                            <option>Hair Styling</option>
+                            <option>Coloring</option>
+                            <option>Skincare</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-accent transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-black text-white py-4 rounded-xl font-bold hover:bg-accent transition-all shadow-lg">Request Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-100 text-center">
+        <p class="text-gray-400 text-sm">© 2026 WebNova Studio | RR Web Designers.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Form Submission Intercept
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Our concierge will contact you shortly to confirm your slot.');
+        });
+    </script>
+</body>
+</html>
